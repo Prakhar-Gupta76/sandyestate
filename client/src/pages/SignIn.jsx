@@ -35,7 +35,7 @@ export default function SignIn() {
             dispatch(signInSuccess(data))
             navigate('/')
         } catch (error) {
-            setLoading(false)
+            loading(false)
             setError(data.message)
         }
     }
